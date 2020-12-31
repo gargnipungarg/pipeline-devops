@@ -1,10 +1,10 @@
 #!/usr/bin/env groovy
 library 'nipun-shared'
 
-def execute() {
+def execute(body) {
   node {
     stage('Clone Source') {
-      cloneSource()
+      cloneSource(body.SOURCE, body.BRANCH)
     }
   }
 }

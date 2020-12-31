@@ -1,3 +1,8 @@
+def requestArray = [
+    SOURCE: 'https://github.com/gargnipungarg/pipeline-devops.git',
+    BRNACH: 'main'
+]
+
 @Library('nipun-shared')
-CICD ops = new CICD()
+CICD ops = new CICD(requestArray)
 ops.execute()
