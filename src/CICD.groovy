@@ -1,6 +1,6 @@
 library 'nipun-shared'
 
-execute() {
+def execute() {
 	node{
 		stage("Clone Source"){
 			printf("First point");
