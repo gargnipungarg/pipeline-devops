@@ -1,3 +1,4 @@
+#!/usr/bin/env groovy
 library 'nipun-shared'
 
 def execute() {

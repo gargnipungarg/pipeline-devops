@@ -1,3 +1,4 @@
+#!/usr/bin/env groovy
 def call() {
-  git(SOURCE: 'https://github.com/gargnipungarg/pipeline-devops.git', BRANCH:'main')
+  git url: 'https://github.com/gargnipungarg/pipeline-devops.git', branch:'main'
 }
