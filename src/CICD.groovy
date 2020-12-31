@@ -6,5 +6,8 @@ def execute(body) {
     stage('Clone Source') {
       cloneSource(body.SOURCE, body.BRANCH)
     }
+    stage('Clone Source') {
+      mvnBuild()
+    }
   }
 }
