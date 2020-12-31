@@ -4,5 +4,5 @@ def requestArray = [
 ]
 
 @Library('nipun-shared')
-CICD ops = new CICD(requestArray)
-ops.execute()
+CICD ops = new CICD()
+ops.execute(requestArray)
