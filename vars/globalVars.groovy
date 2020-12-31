@@ -1,3 +1,7 @@
 #!/usr/bin/env groovy
 
-static String credsId = 'nipun-git'
+class globalVars {
+
+  static def credsId = 'nipun-git'
+
+}
