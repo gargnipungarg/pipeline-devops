@@ -6,8 +6,11 @@ def execute(body) {
     stage('Clone Source') {
       cloneSource(body.SOURCE, body.BRANCH)
     }
-    stage('Clone Source') {
+    stage('Maven Build') {
       mvnBuild()
+    }
+    stage('Containerize') {
+      containerize(body.ARTIFACT_ID)
     }
   }
 }
